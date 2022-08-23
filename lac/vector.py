@@ -143,7 +143,7 @@ def add(v1: Vector, v2: Vector) -> Vector:
         raise ValueError(msg.format(v1.dim, v2.dim))
 
     ## homework:start
-    output_vector = 0
+    output_vector = v1 + v2
     ## homework:end
     return output_vector
 
@@ -231,5 +231,3 @@ def _validate_vectors_same_dim(v1: Vector, v2: Vector):
         raise ValueError(
             f"vectors must have the same dimension, got {v1.dim} and {v2.dim}"
         )
-
-print(Vector([2,3]) + Vector([2,3, 5]))
