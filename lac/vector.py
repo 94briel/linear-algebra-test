@@ -39,7 +39,7 @@ class Vector:
     def norm(self) -> float:
         if not hasattr(self, "_norm"):
             ## homework:start
-            self._norm = 0
+            self._norm =
             ## homework:end
         return self._norm
 
@@ -49,8 +49,9 @@ class Vector:
         return
         ## homework:end
 
-    def __add__(self, other: Vector) -> Vector:  
-        return Vector([i+j for i,j in zip(self.components,other.components)])
+    def __add__(self, other: Vector) -> Vector:
+        ## homework:start
+        return
         ## homework:end
 
     def __neg__(self) -> Vector:
@@ -60,7 +61,7 @@ class Vector:
 
     def __sub__(self, other: Vector) -> Vector:
         ## homework:start
-        return Vector([i-j for i,j in zip(self.components,other.components)])
+        return
         ## homework:end
 
     def __abs__(self):
@@ -127,7 +128,7 @@ def scale(v: Vector, k: t.Union[int, float]) -> Vector:
         raise TypeError(msg.format(type(k)))
 
     ## homework:start
-    output_vector = 0
+    output_vector = 
     ## homework:end
     return output_vector
 
@@ -143,7 +144,7 @@ def add(v1: Vector, v2: Vector) -> Vector:
         raise ValueError(msg.format(v1.dim, v2.dim))
 
     ## homework:start
-    output_vector = 0
+    output_vector =
     ## homework:end
     return output_vector
 
@@ -151,7 +152,7 @@ def add(v1: Vector, v2: Vector) -> Vector:
 def subtract(v1: Vector, v2: Vector) -> Vector:
     """Subtracts the second vector from the first vector. """
     ## homework:start
-    output_vector = 0
+    output_vector =
     ## homework:end
     return output_vector
 
@@ -167,7 +168,7 @@ def dot(v1: Vector, v2: Vector) -> float:
         msg = "vectors must have the same dimension, got {} and {}"
         raise ValueError(msg.format(v1.dim, v2.dim))
     ## homework:start
-    output_value = 0
+    output_value =
     ## homework:end
     return output_value
 
@@ -175,7 +176,7 @@ def dot(v1: Vector, v2: Vector) -> float:
 def angle_between(v1: Vector, v2: Vector) -> float:
     """Computes the angle between two vectors. """
     ## homework:start
-    alpha = 0
+    alpha =
     ## homework:end
     return alpha
 
@@ -192,7 +193,7 @@ def cross(v1: Vector, v2: Vector) -> Vector:
             raise ValueError(msg.format(v.dim))
 
     ## homework:start
-    output_vector = 0
+    output_vector =
     ## homework:end
     return output_vector
 
@@ -200,7 +201,7 @@ def cross(v1: Vector, v2: Vector) -> Vector:
 def build_unit_vector(v: Vector) -> Vector:
     """Builds a unit vector from the provided vector. """
     ## homework:start
-    unit_vector = 0
+    unit_vector =
     ## homework:end
     return unit_vector
 
@@ -216,7 +217,7 @@ def project(v: Vector, d: Vector) -> Vector:
         Vector: the projection of v onto d.
     """
     ## homework:start
-    projection_vector = 0
+    projection_vector = 
     ## homework:end
     return projection_vector
 
@@ -231,5 +232,3 @@ def _validate_vectors_same_dim(v1: Vector, v2: Vector):
         raise ValueError(
             f"vectors must have the same dimension, got {v1.dim} and {v2.dim}"
         )
-
-print(Vector([2,3]) + Vector([2,3, 5]))
