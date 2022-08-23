@@ -89,7 +89,7 @@ class Matrix:
     def T(self) -> Matrix:
         if not hasattr(self, "_T"):
             ## homework:start
-            self._T =  0
+            self._T = 
             ## homework:end
         return self._T
 
@@ -97,7 +97,7 @@ class Matrix:
     def determinant(self) -> float:
         if not hasattr(self, "_det"):
             ## homework:start
-            self._det = 0
+            self._det = 
             ## homework:end
         return self._det
 
@@ -105,7 +105,7 @@ class Matrix:
     def inverse(self) -> Matrix:
         if not hasattr(self, "_inverse"):
             ## homework:start
-            self._inverse = 0
+            self._inverse = 
             ## homework:end
         return self._inverse
 
@@ -113,7 +113,7 @@ class Matrix:
     def trace(self) -> float:
         if not hasattr(self, "_trace"):
             ## homework:start
-            self_trace = 0
+            self_trace = 
             ## homework:end
         return self._trace
 
@@ -257,7 +257,7 @@ def _make_identity_rowvectors(num_rows, num_columns):
 def scale(m: Matrix, k: t.Union[int, float]) -> Matrix:
     """Scale matrix m by k. """
     ## homework:start
-    output_matrix = 0
+    output_matrix = 
     ## homework:end
     return output_matrix
 
@@ -265,7 +265,7 @@ def scale(m: Matrix, k: t.Union[int, float]) -> Matrix:
 def add(m1: Matrix, m2: Matrix) -> Matrix:
     """Adds two matrices. """
     ## homework:start
-    output_matrix = 0
+    output_matrix = 
     ## homework:end
     return output_matrix
 
@@ -273,7 +273,7 @@ def add(m1: Matrix, m2: Matrix) -> Matrix:
 def subtract(m1: Matrix, m2: Matrix) -> Matrix:
     """Substracts the second matrix from the first one. """
     ## homework:start
-    output_matrix = 0
+    output_matrix = 
     ## homework:end
     return output_matrix
 
@@ -286,7 +286,7 @@ def vector_multiply(m: Matrix, v: Vector, from_left: bool = False) -> Vector:
         raise ValueError(f"Shape mismatch: m({m.shape}), v({v.dim})")
 
     ## homework:start
-    output_vector = 0
+    output_vector = 
     ## homework:end
     return output_vector
 
@@ -312,7 +312,7 @@ def matrix_multiply(m1: Matrix, m2: Matrix) -> Matrix:
         )
         raise ValueError(msg.format(m1.num_columns, m2.num_rows))
     ## homework:start
-    output_matrix = 0
+    output_matrix = 
     ## homework:end
     return output_matrix
 

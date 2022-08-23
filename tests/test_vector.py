@@ -273,6 +273,3 @@ class TestVectorOps(unittest.TestCase):
                 vec1 = vector_ops.cross(v1, vector_ops.cross(v2, v3))
                 vec2 = ((v1 @ v3) * v2) - ((v1 @ v2) * v3)
                 utils.assert_vectors_almost_equal(vec1, vec2)
-
-v1 = "g"
-print(v1)
