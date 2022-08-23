@@ -50,9 +50,7 @@ class Vector:
         ## homework:end
 
     def __add__(self, other: Vector) -> Vector:
-        ## homework:start
-        return
-        ## homework:end
+        return Vector([i+j for i,j in zip(self.components,other.components)])
 
     def __neg__(self) -> Vector:
         ## homework:start
@@ -144,9 +142,7 @@ def add(v1: Vector, v2: Vector) -> Vector:
         raise ValueError(msg.format(v1.dim, v2.dim))
 
     ## homework:start
-    output_vector =
-    ## homework:end
-    return output_vector
+    output_vector = v1 + v2
 
 
 def subtract(v1: Vector, v2: Vector) -> Vector:
